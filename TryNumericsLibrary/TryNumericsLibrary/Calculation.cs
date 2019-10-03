@@ -64,5 +64,32 @@ namespace TryNumericsLibrary
             Matrix<double> res = DenseMatrix.OfArray(temp);
             return res;
         }
+
+        public static double[] Xnext(double[] xprev, double[] xnext, int m = 3, int n = 2)
+        {
+            double[] res = new double[n];
+            //Matrix<double> A = MatrixA(xprev, xnext);
+            double[] x = new double[n];
+            for (int i = 0; i < n; i++)
+            {
+                x[i] = 2 * xnext[i] - xprev[i];
+            }
+            Matrix<double> A = MatrixA(x, xprev);
+            Matrix<double> Atrans = A.Transpose();
+            Matrix<double> Ainverse = (Atrans * A).Inverse();
+            double[] func = Systema(xnext);
+            Vector<double> funcValues = DenseVector.OfArray(func);
+            double[] pryrist = new double[n];
+            for (int i = 0; i < n; i++)
+            {
+                pryrist[i] = (Ainverse * Atrans * funcValues)[i];
+            }
+            for (int i = 0; i < n; i++)
+            {
+                res[i] = xnext[i] - pryrist[i];
+            }
+            return res;
+
+        }
     }
 }
