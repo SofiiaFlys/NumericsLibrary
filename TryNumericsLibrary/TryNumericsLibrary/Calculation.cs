@@ -20,5 +20,41 @@ namespace TryNumericsLibrary
             res[2] = x1 * x2 - 2;
             return res;
         }
+        public static double[,] PartFN(double[] x0, double[] x1, int n = 2, int m = 3)
+        {
+            double[,] res = new double[m, n];
+            double[] vector1 = new double[n];
+            double[] vector2 = new double[n];
+            double chus = 0;
+            double znam = 0;
+
+            for (int j = 0; j < m; j++)
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    for (int k = 0; k <= i; k++)
+                    {
+                        vector1[k] = x0[k];
+                    }
+                    for (int k = i + 1; k < n; k++)
+                    {
+                        vector1[k] = x1[k];
+                    }
+
+                    for (int k = 0; k <= i - 1; k++)
+                    {
+                        vector2[k] = x0[k];
+                    }
+                    for (int k = i; k < n; k++)
+                    {
+                        vector2[k] = x1[k];
+                    }
+                    chus = Systema(vector1)[j] - Systema(vector2)[j];
+                    znam = x0[i] - x1[i];
+                    res[j, i] = chus / znam;
+                }
+            }
+            return res;
+        }
     }
 }
