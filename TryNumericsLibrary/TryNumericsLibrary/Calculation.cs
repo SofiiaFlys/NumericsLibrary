@@ -56,5 +56,13 @@ namespace TryNumericsLibrary
             }
             return res;
         }
+
+        public static Matrix<double> MatrixA(double[] xprev, double[] xnext, int m = 3, int n = 2)
+        {
+            double[,] temp = PartFN(xprev, xnext);
+
+            Matrix<double> res = DenseMatrix.OfArray(temp);
+            return res;
+        }
     }
 }
