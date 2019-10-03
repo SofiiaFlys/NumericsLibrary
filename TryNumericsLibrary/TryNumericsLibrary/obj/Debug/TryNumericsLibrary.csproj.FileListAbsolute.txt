@@ -1,0 +1,10 @@
+D:\University\NumericsLibrary\TryNumericsLibrary\TryNumericsLibrary\bin\Debug\TryNumericsLibrary.exe.config
+D:\University\NumericsLibrary\TryNumericsLibrary\TryNumericsLibrary\bin\Debug\TryNumericsLibrary.exe
+D:\University\NumericsLibrary\TryNumericsLibrary\TryNumericsLibrary\bin\Debug\TryNumericsLibrary.pdb
+D:\University\NumericsLibrary\TryNumericsLibrary\TryNumericsLibrary\bin\Debug\MathNet.Numerics.dll
+D:\University\NumericsLibrary\TryNumericsLibrary\TryNumericsLibrary\bin\Debug\MathNet.Numerics.xml
+D:\University\NumericsLibrary\TryNumericsLibrary\TryNumericsLibrary\obj\Debug\TryNumericsLibrary.csprojAssemblyReference.cache
+D:\University\NumericsLibrary\TryNumericsLibrary\TryNumericsLibrary\obj\Debug\TryNumericsLibrary.csproj.CoreCompileInputs.cache
+D:\University\NumericsLibrary\TryNumericsLibrary\TryNumericsLibrary\obj\Debug\TryNumericsLibrary.csproj.CopyComplete
+D:\University\NumericsLibrary\TryNumericsLibrary\TryNumericsLibrary\obj\Debug\TryNumericsLibrary.exe
+D:\University\NumericsLibrary\TryNumericsLibrary\TryNumericsLibrary\obj\Debug\TryNumericsLibrary.pdb
